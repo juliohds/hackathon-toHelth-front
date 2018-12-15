@@ -1,5 +1,5 @@
 /******************************************************************
-Theme Name: Medical 
+Theme Name: Medica 
 Description: 
 Author: Colorlib
 Author URI: 
@@ -2355,25 +2355,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #008000;
 }
 
-.p1-gradient-bg, .team-area .thumb div, .sidebar-appointment .primary-btn, .footer-social a:hover, .single-footer-widget .bb-btn {
-  background: -moz-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-  background: -webkit-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-  background: -ms-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-}
-
-.p1-gradient-color, .header-top .header-top-left a .lnr, .single-facilities .lnr, .single-facilities:hover h4 {
-  background: -moz-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-  background: -webkit-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-  background: -ms-linear-gradient(90deg, #64bb00 0%, #abe500 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.primary-btn {
-  background: #69be00;
-  line-height: 42px;
+.login {
+  background: #24126a;
+  line-height: 40px;
   padding-left: 30px;
   padding-right: 30px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.primary-btn {
+  background: #24126a;
+  line-height: 30px;
+  padding-left: 0px;
+  padding-right: 5px;
   border: none;
   color: #fff;
   display: inline-block;
@@ -2532,7 +2537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content .primary-btn {
-  background-color: #69be00;
+  background-color: #24126a;
   color: #fff;
   font-weight: 600;
   font-size: 14px;
@@ -2540,7 +2545,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-content .primary-btn:hover {
   background-color: #fff;
-  color: #69be00;
+  color: #24126a;
 }
 
 /*-------- End Banner Area ------------*/
