@@ -63,17 +63,17 @@
 		                    <div class="title text-center">
 		                        <h2 class="mb-10">Horários Disponiveis</h2>
 								<p><b class="Exam">Exame de Sangue</b></p>
-								<p><i>Segunda-Feira</i></p>
+								<p><i>Segunda-Feira - 13/01</i></p>
 								<form>
 									<p><input type="radio" name="horario" value="op1">10:00</p>
 									<p><input type="radio" name="horario" value="op1">14:00</p>
-								<p><i>Sexta-Feira</i></p>
+								<p><i>Sexta-Feira - 18/03</i></p>
 									<p><input type="radio" name="horario" value="op1">9:30</p>
 									<p><input type="radio" name="horario" value="op1">13:00</p>
 								</form>
 
 								<p><b class="Exam">Glicose</b></p>
-								<p><i>Segunda-Feira</i></p>
+								<p><i>Segunda-Feira - 13/01</i></p>
 								<form>
 									<p><input type="radio" name="horario" value="op1">9:00</p>
 									<p><input type="radio" name="horario" value="op1">16:00</p>
@@ -81,10 +81,10 @@
 								
 
 								<p><b class="Exam">Uréia</b></p>
-								<p><i>Segunda-Feira</i></p>
+								<p><i>Segunda-Feira - 13/01</i></p>
 								<form>
-									<input type="radio" name="horario" value="op1">10:00
-								<p><i>Quarta-Feira</i></p>
+									<input type="radio" name="horario" value="op1">9:30
+								<p><i>Quarta-Feira- 15/01</i></p>
 									<p><input type="radio" name="horario" value="op1">10:00</p> 
 									<p><input type="radio" name="horario" value="op1">12:00</p>
 								</form>
@@ -118,7 +118,7 @@
 
 				$( document ).ready(function() {
 					$("#agendar").click(function(){
-						toastr.success('Agendado com sucesso!', 'Gabriel, vamos te lembrar');
+						toastr.success('Vamos te lembrar', 'AGENDADO COM SUCESSO');
 						setInterval(function(){ window.location = "index.html"; }, 3000);
 
 					});
