@@ -2360,7 +2360,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .login {
-  background: #24126a;
+  background: #009595;
   line-height: 40px;
   padding-left: 30px;
   padding-right: 30px;
@@ -2379,7 +2379,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .primary-btn {
-  background: #24126a;
+  background:#009595;
   line-height: 30px;
   padding-left: 0px;
   padding-right: 5px;
@@ -2555,7 +2555,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content .primary-btn {
-  background-color: #24126a;
+  background-color: #009595;
   color: #fff;
   font-weight: 600;
   font-size: 14px;
@@ -2563,7 +2563,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-content .primary-btn:hover {
   background-color: #fff;
-  color: #24126a;
+  color: #009595;
 }
 
 /*-------- End Banner Area ------------*/
