@@ -66,8 +66,8 @@
 				<div class="container">
 					<br/><br/><br/><br/><br/><br/>
 					<h1 style="color: white">Seus Exames:</h1>
-					<div id="exames">
-
+					<div id="exames" style="display: flex; padding: 15px">
+						<br/><br/>
 					</div>
 					<a href="doctors.html"><img src="./img/Maps.jpg" class="" /></a>
 					<div class="row d-flex align-items-center justify-content-center">
@@ -93,11 +93,24 @@
 			
 			<script>
 			
-			$( document ).ready(function() {
-					
-				var exames = localStorage.getItem('exames');
-					console.log("here");
-					console.log(exames);
+			exames = null;
+
+				$( document ).ready(function() {
+
+						$.ajax({
+						url: "https://pgr2kjh8if.execute-api.us-east-1.amazonaws.com/default/my_lambda_function",
+						dataType: "json",
+						type: "POST",
+						success(data){
+							console.log(data.data);
+							let array = data.data;
+							array.map(a =>{
+								
+								var pNew = `<p style="color:white; font-size: 20px"> ${a.exam} &nbsp<input type="checkbox"> &nbsp &nbsp</p>`;
+								$("#exames").append(pNew);
+							});
+						},
+						});
 				});
 			</script>
 		</body>

@@ -128,8 +128,9 @@
 						dataType: "json",
 						type: "POST",
 						success(data){
+							console.log(data);
 							exames = data;
-							localStorage.setItem('exames', exames);
+							localStorage.setItem('exames', exames.data);
 							window.location = "departments.html";
 						},
 						}).done(function() {
