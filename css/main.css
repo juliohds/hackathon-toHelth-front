@@ -2486,6 +2486,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area .overlay-bg {
   background-color: rgba(0, 0, 0, 0.4);
 }
+.Maps {
+  width: 95%;
+  padding-top: 125px;
+  padding-left: 18px;
+  padding-right: 3px;
+  padding-bottom: 17px; 
+}
 
 @media (max-width: 767px) {
   .fullscreen {
