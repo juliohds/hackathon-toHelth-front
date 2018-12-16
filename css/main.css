@@ -100,6 +100,9 @@ body {
   position: relative;
 }
 
+.Exam {
+  font-size: 15pt;
+}
 ol, ul {
   margin: 0;
   padding: 0;
@@ -792,6 +795,7 @@ td, th {
 .container.no-padding {
   padding-left: 0;
   padding-right: 0;
+
 }
 
 .no-padding {
@@ -920,7 +924,7 @@ td, th {
 }
 
 b, sup, sub, u, del {
-  color: #69be00;
+  color: #24126a;
 }
 
 h1 {
@@ -975,7 +979,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .circle {
   border-radius: 20px;
-}
+} 
 
 .genric-btn {
   display: inline-block;
@@ -2240,7 +2244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #000;
   font-weight: 900;
 }
 
@@ -2429,6 +2433,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .primary-btn.white:hover {
   background: #fff;
   color: #69be00;
+
 }
 
 .primary-btn.white:hover span {
@@ -2492,6 +2497,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 18px;
   padding-right: 3px;
   padding-bottom: 17px; 
+}
+
+.lab {
+  width: 10%;
+  padding-top: 100px;
+  padding-right: 350px;
 }
 
 @media (max-width: 767px) {
@@ -3726,7 +3737,7 @@ dl.toggle.time-line:before {
 .post-content-area .single-post .view .lnr,
 .post-content-area .single-post .comments .lnr {
   font-weight: 900;
-  color: #222;
+  color: #000;
 }
 
 .post-content-area .single-post .feature-img img {
