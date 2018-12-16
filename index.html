@@ -114,18 +114,23 @@
 					return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 				}
 
+				exames = null;
+
 				$( document ).ready(function() {
 					console.log( "ready!" );
 					console.log($("#img-file-upload"));
 					$("#uploadFile").click(function(){
 						console.log($("#img-file-upload").val());
-						getBase64Image($("#img-file-upload").val());
+						// getBase64Image($("#img-file-upload").val());
 
 						$.ajax({
-						url: "http://www.json-generator.com/api/json/get/ceGJVbundu?indent=2",
+						url: "https://pgr2kjh8if.execute-api.us-east-1.amazonaws.com/default/my_lambda_function",
 						dataType: "json",
+						type: "POST",
 						success(data){
-							console.log(data);
+							exames = data;
+							localStorage.setItem('exames', exames);
+							window.location = "departments.html";
 						},
 						}).done(function() {
 							
