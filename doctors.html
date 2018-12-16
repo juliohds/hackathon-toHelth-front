@@ -90,7 +90,7 @@
 								</form>
 
 								<div class="col-lg-4 col-md-12">
-										<button class="nw-btn primary-btn circle">Agendar<span class="lnr lnr-arrow-right"></span></button>
+										<button id="agendar" class="nw-btn primary-btn circle" style="padding: 15px">Agendar<span class="lnr lnr-arrow-right"></span></button>
 								</div> 
 		                    </div>
 		                </div>
@@ -112,5 +112,18 @@
 			<script src="js/owl.carousel.min.js"></script>									
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
+			<link href="./node_modules/toastr/build/toastr.min.css" rel="stylesheet"/>
+			<script src="./node_modules/toastr/build/toastr.min.js"></script>
+			<script>
+
+				$( document ).ready(function() {
+					$("#agendar").click(function(){
+						toastr.success('Agendado com sucesso!', 'Gabriel, vamos te lembrar');
+						setInterval(function(){ window.location = "index.html"; }, 3000);
+
+					});
+				});
+			
+			</script>
 		</body>
 	</html>
