@@ -2498,7 +2498,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 3px;
   padding-bottom: 17px; 
 }
-
+.myExams {
+  display: flex;
+  padding: 15px;
+  
+}
+@media(max-width: 700px){
+  .myExams{
+    display:block;
+  }    
+}
 .lab {
   width: 10%;
   padding-top: 100px;

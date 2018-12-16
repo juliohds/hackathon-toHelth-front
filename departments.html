@@ -66,7 +66,9 @@
 				<div class="container">
 					<br/><br/><br/><br/><br/><br/>
 					<h1 style="color: white">Seus Exames:</h1>
-					
+					<div id="exames" class="myExams">
+							<br/><br/>
+					</div>
 					<a href="doctors.html"><img src="./img/Maps.jpg" class="Maps" /></a>
 					<div class="row d-flex align-items-center justify-content-center">
 					<div class="col-lg-2"></div>	
@@ -102,9 +104,9 @@
 						success(data){
 							console.log(data.data);
 							let array = data.data;
-							array.map(a =>{
+							array.map((a, aux = 0, arr) =>{
 								
-								var pNew = `<p style="color:white; font-size: 20px"> ${a.exam} &nbsp<input type="checkbox"> &nbsp &nbsp</p>`;
+								var pNew = `<p style="color:white; font-size: 20px"> ${a.exam} ${arr.length-1===aux? "":"-"}</p>`;
 								$("#exames").append(pNew);
 							});
 						},
