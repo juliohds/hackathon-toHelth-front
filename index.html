@@ -74,7 +74,8 @@
 							<p class="pt-10 pb-10 text-white">
 								Faça o upload do seu exame aqui.
 							</p>
-							<input type="file" class="primary-btn text-uppercase"></input>
+							<input type="file" id="img-file-upload" class="primary-btn text-uppercase"/><br/> <br/>
+							<a href="#" id="uploadFile" class="primary-btn text-uppercase">&nbsp &nbsp Enviar &nbsp</a>
 						</div>										
 					</div>
 				</div>					
@@ -100,5 +101,40 @@
 			<script src="js/owl.carousel.min.js"></script>									
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
+
+
+			<script>
+				function getBase64Image(imgElem) {
+				// imgElem must be on the same server otherwise a cross-origin error will be thrown "SECURITY_ERR: DOM Exception 18"
+					var canvas = document.createElement("canvas");
+					canvas.width = imgElem.clientWidth;
+					canvas.height = imgElem.clientHeight;
+					var ctx = canvas.getContext("2d");
+					ctx.drawImage(imgElem, 0, 0);
+					var dataURL = canvas.toDataURL("image/png");
+					return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+				}
+
+				$( document ).ready(function() {
+					console.log( "ready!" );
+					console.log($("#img-file-upload"));
+					$("#uploadFile").click(function(){
+						console.log($("#img-file-upload").val());
+						getBase64Image($("#img-file-upload").val());
+
+						$.ajax({
+						url: "http://www.json-generator.com/api/json/get/ceGJVbundu?indent=2",
+						dataType: "json",
+						success(data){
+							console.log(data);
+						},
+						}).done(function() {
+							
+						});
+					});
+				});
+				
+			
+			</script>
 		</body>
 	</html>
